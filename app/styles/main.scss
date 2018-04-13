@@ -1,6 +1,21 @@
 @import 'fonts';
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
+// initial settings
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
+
+// sections
+@import "./sections/header";
+
+
+
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   background-color: #4961ae;
+}
+
+
+//-------
