@@ -5,20 +5,24 @@
 header(class="header")
   div(class="container")
     div(class="header__content")
-      img(src="./images/logos/adcrypto_logo.png" alt="adcrypto logo" class="imgg")
+      a(class="header__logo-link" href="#")
+        img(src="./images/logos/adcrypto_logo.png" alt="adcrypto logo" class="header__logo" )
       nav(class="header__nav")
         ul(class="header__list")
           li(class="header__item")
-            a(href="#" class="header__link") Преимущества
+            a(href="#rare" class="header__link") Преимущества
           li(class="header__item")
-            a(href="#" class="header__link") Особенности
+            a(href="#features" class="header__link") Особенности
           li(class="header__item")
-            a(href="#" class="header__link") Вывод заработка
+            a(href="#withdrawal" class="header__link") Вывод заработка
           li(class="header__item")
-            a(href="#" class="header__link") Реферальная программа
+            a(href="#referral" class="header__link") Реферальная программа
           li(class="header__item")
-            a(href="#" class="header__link") О Tugush
-      div(class="header__registration")  Вход / Регистрация
+            a(href="#about" class="header__link") О Tugush
+      div(class="header__registration")
+        //button(class="header__auth-btn") Вход
+        //span() /
+        button(class="header__auth-btn" id="registrationBtn") Регистрация
 
 
 

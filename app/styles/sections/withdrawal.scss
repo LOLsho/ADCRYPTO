@@ -1,0 +1,49 @@
+.withdrawal {
+  background: #f2f2f2;
+  padding: 81px 0 78px;
+}
+
+//.withdrawal__title {
+//
+//}
+
+.withdrawal__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+//.withdrawal__item {
+//
+//}
+
+.withdrawal__wrap-svg {
+  width: 200px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.withdrawal__svg {
+
+  &1 {
+    width: 184px;
+  }
+
+  &2 {
+    width: 163px;
+  }
+
+  &3 {
+    width: 96px;
+  }
+
+  &4 {
+    width: 200px;
+  }
+
+  &5 {
+    width: 87px;
+  }
+}

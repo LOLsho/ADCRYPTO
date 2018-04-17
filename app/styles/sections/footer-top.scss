@@ -1,0 +1,93 @@
+.footer-top {
+  background: url("../../images/bg/black.png");
+  background-size: 100px;
+  padding: 45px 0 40px;
+}
+
+.footer-top__content {
+  display: flex;
+}
+
+.footer-top__logo {
+
+}
+
+.footer-top__logo-img {
+  width: 157px;
+}
+
+.footer-top__contacts {
+  width: 314px;
+  margin-left: 95px;
+  margin-right: 85px;
+  border-left: 1px solid rgba(white, .2);
+  border-right: 1px solid rgba(white, .2);
+  color: #8d8d8d;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top__contacts-wrap {
+
+}
+
+.footer-top__contacts-title {
+  font-size: 16px;
+  color: white;
+}
+
+.footer-top__tel {
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+.footer-top__tel span {
+  color: white;
+}
+
+.footer-top__email {
+  margin-top: 6px;
+  color: #8d8d8d;
+  transition: color 0.3s;
+
+
+  &:hover {
+    color: #d4d4d4;
+  }
+}
+
+.footer-top__socials {
+  margin-top: 23px;
+  display: flex;
+}
+
+.footer-top__icon {
+  color: #8d8d8d;
+  margin-right: 21px;
+  transition: color 0.3s;
+  font-size: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: #d4d4d4;
+  }
+}
+
+.footer_top__office {
+
+}
+
+.footer-top__office-title {
+  font-size: 16px;
+  color: white;
+}
+
+.footer-top__office-address {
+  font-size: 14px;
+  color: #8d8d8d;
+  margin-top: 14px;
+  width: 241px;
+}

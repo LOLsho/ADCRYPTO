@@ -1,0 +1,44 @@
+.unit {
+  background: url("../../images/bg/grey@2x.png");
+  background-size: 100px;
+  padding: 75px 0 85px;
+}
+
+.unit__content {
+
+}
+
+.unit__title {
+
+}
+
+.unit__list {
+  margin-top: 55px;
+}
+
+.unit__item {
+  display: flex;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.unit__svg {
+  width: 29px;
+  height: 29px;
+  color: #6d6d6d;
+}
+
+.unit__text {
+  padding-top: 1px;
+  margin-left: 21px;
+  color: #6d6d6d;
+  font-size: 20px;
+}
+
+.unit__text span {
+  color: #4961ae;
+  font-weight: bold;
+}

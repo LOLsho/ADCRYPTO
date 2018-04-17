@@ -1,21 +1,18 @@
-@import 'fonts';
+@import '../fonts/_fonts';
 
 // initial settings
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+@import "initial-settings";
 
 // sections
 @import "./sections/header";
-
-
-
-
-body {
-   font-family: 'Open Sans', sans-serif;
-   background-color: #4961ae;
-}
-
-
-//-------
+@import "./sections/adcrypto";
+@import "./sections/rare";
+@import "./sections/unit";
+@import "./sections/features";
+@import "./sections/withdrawal";
+@import "./sections/referral";
+@import "./sections/about";
+@import "./sections/map";
+@import "./sections/footer-top";
+@import "./sections/footer-bottom";
+@import "./sections/registration";

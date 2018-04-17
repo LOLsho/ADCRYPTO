@@ -1,0 +1,41 @@
+.adcrypto {
+  background: url("../../images/bg/main-bg@2x.jpg") no-repeat center top;
+  //background-size: cover;
+  background-size: 1919px;
+  padding: 45px 0 120px 0;
+}
+
+.adcrypto__container {
+
+}
+
+.adcrypto__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adcrypto__tugush-img {
+  width: 102px;
+}
+
+.adcrypto__logo-img {
+  width: 506px;
+  margin-right: 75px;
+  margin-top: -5px;
+}
+
+.adcrypto__title {
+  color: white;
+  width: 894px;
+  margin-top: 60px;
+}
+
+.adcrypto__btn {
+  margin-top: 62px;
+  background: none;
+
+  &:hover {
+    background: rgba(white, .08);
+  }
+}

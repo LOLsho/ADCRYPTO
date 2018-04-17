@@ -1,0 +1,59 @@
+.features {
+  background: url("../../images/bg/products-bg@2x.jpg") no-repeat center center / cover;
+  padding: 81px 0;
+}
+
+.features__title {
+  color: white;
+}
+
+.features__list {
+  display: flex;
+  margin-top: 51px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features__item {
+  width: 316px;
+  margin-right: 114px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.features__svg-wrap {
+  height: 124px;
+}
+
+.features__svg {
+  margin: 0 auto;
+
+  &1 {
+    width: 100px;
+  }
+
+  &2 {
+    width: 94px;
+  }
+
+  &3 {
+    width: 98px;
+  }
+
+  &4 {
+    width: 112px;
+  }
+
+  &5 {
+    width: 89px;
+  }
+}
+
+.features__text {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}

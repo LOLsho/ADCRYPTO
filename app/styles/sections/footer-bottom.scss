@@ -1,0 +1,35 @@
+.footer-bottom {
+  background: url("../../images/bg/blackest.png");
+  background-size: 100px;
+  padding: 41px 0 38px;
+}
+
+.footer-bottom__content {
+  display: flex;
+}
+
+.footer-bottom__rights {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-bottom__rights-text {
+  width: 230px;
+}
+
+.footer-bottom__rights-link {
+  margin-top: 10px;
+  color: #8d8d8d;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #d4d4d4;
+  }
+}
+
+.footer-bottom__text {
+  width: 600px;
+  color: #807f7f;
+  font-size: 14px;
+  margin-left: 105px;
+}
