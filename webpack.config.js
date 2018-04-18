@@ -13,10 +13,11 @@ const CleanPlugin = require('clean-webpack-plugin')
 const parts = require('./webpack.parts')
 
 const lintJSOptions = {
-  emitWarning: true,
+  emitWarning: false,
   // Fail only on errors
   failOnWarning: false,
   failOnError: true,
+  quiet: true,
 
   // Toggle autofix
   fix: true,
