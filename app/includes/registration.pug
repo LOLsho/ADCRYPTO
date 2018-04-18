@@ -4,9 +4,19 @@ div(class="registration")
       p(class="registration__title") Зарегистрироваться
       img(class="registration__exit-img" id="exitBtn" src="./images/svg/close@3x.png")
     div(class="registration__content")
-      form(class="registration__form")
+      form(class="registration__form" action="server.php" method="post" id="registration__form")
+
+        div(class="registration__input-wrap")
+          label(class="registration__label" for="name") Имя:
+          input(type="text" name="name" id="name" class="registration__input" placeholder="Введите имя")
+
+        div(class="registration__input-wrap")
+          label(class="registration__label" for="tel") Телефон:
+          input(type="tel" name="tel" id="tel" class="registration__input" placeholder="Введите номер телефона")
+
+
         div(class="registration__input-wrap")
           label(class="registration__label" for="email") Введите E-mail:
           input(type="email" name="email" id="email" class="registration__input" placeholder="Введите E-mail" required)
         div(class="registration__line")
-        button(type="submit" class="btn registration__btn") зарегистрироваться
+        button(type="button" class="btn registration__btn" id="registration__btn") зарегистрироваться

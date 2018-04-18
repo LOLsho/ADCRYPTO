@@ -1,7 +1,6 @@
 import './../styles/main.scss'
 import './google-map'
 
-console.log('i am in index.js');
 if (process.env.NODE_ENV !== 'production') {
   require('./../index.pug')
 }
@@ -11,6 +10,7 @@ let registrationBtn = document.querySelector('#registrationBtn')
 let popup = document.querySelector('.registration')
 let closeBtn = document.querySelector('#exitBtn')
 let registrationBtnBig = document.querySelector('#registrationBtnBig')
+let registrationBtnBig2 = document.querySelector('#registrationBtnBig2')
 
 function openRegistrPopup () {
   popup.style.display = 'flex'
@@ -34,6 +34,10 @@ registrationBtnBig.onclick = function () {
   openRegistrPopup()
 }
 
+registrationBtnBig2.onclick = function () {
+  openRegistrPopup()
+}
+
 closeBtn.onclick = function () {
   closeRegistrPopup()
 }
@@ -51,3 +55,49 @@ closeBtn.onclick = function () {
 //     scrollTo(element, to, duration - 10)
 //   }, 10)
 // }
+
+
+
+
+// ------------> Form <-----------
+let submitBtn = document.querySelector('#registration__btn');
+let form = document.querySelector('registration__form');
+
+// submitBtn.addEventListener('click', function (event) {
+//   event.preventDefault();
+//   let name = document.querySelector('#name');
+//   let tel = document.querySelector('#tel');
+//   let email = document.querySelector('#email');
+
+  // console.log(name.value, tel.value, email.value)
+// });
+
+$(form).on('submit', submitForm);
+
+function submitForm (ev) {
+  ev.preventDefault()
+
+  let form = $(ev.target)
+  let data = form.serialize()
+  let url = form.attr('action')
+  let type = form.attr('method')
+
+  var request = $.ajax({
+    type: type,
+    url: url,
+    data: data
+  })
+
+  request.done(function(msg) {
+    alert(msg)
+  })
+}
+
+// var request = $.ajax({
+//   url: "server.php",
+//   method:
+// })
+
+// $(document).ready(function () {
+//   $(#)
+// })

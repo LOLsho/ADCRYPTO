@@ -52,8 +52,9 @@
 .registration__input-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 33px 0;
+  margin-right: 100px;
 }
 
 .registration__label {
