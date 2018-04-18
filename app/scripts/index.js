@@ -1,5 +1,7 @@
 import './../styles/main.scss'
 import { MyMap } from './google-map';
+import * as $ from 'jquery';
+import * as scrollto from 'jquery.scrollto';
 window['myMap'] = null;
 
 window['initMap'] = function(){
@@ -88,50 +90,44 @@ function onLoad(){
       email: email
     };
 
-    const request = $.ajax({
-      type: type,
-      url: url,
+    const request = $.post(url,{
       data: JSON.stringify(data),
-      dataType : 'JSON'
-    });
+    }).done(()=>{
+        closeRegistrPopup();
+        openRegistrSuccess();
+      })
+      .fail(()=>{
+        console.error(error)
+      })
+    ;
 
 
-    if(true) {
-      closeRegistrPopup();
-      openRegistrSuccess();
-    } else {
-
-    }
 
   }
 
 
 
   // ---------- Scrolling to a certain section ----------
-  // let nav = document.querySelectorAll('.header__link');
-  // let section1 = document.querySelector('#rare');
-  //
-  // nav[0].addEventListener('click', function (event) {
-  //   let start = window.pageYOffset;
-  //   let to = section1.scrollTop;
-  //   event.preventDefault();
-  //   // scrollTo();
-  //   console.log(start);
-  //   console.log(to);
-  //
-  //   window.scrollTo(0, 3000);
-  //
-  //   // window.pageYOffset = 1500;
-  // });
-  //
-  //
-  // function scrollTo(section) {
-  //
-  //
-  //
-  //   console.log(window.scrollX);
-  //   // start = window.
-  // }
+  const nav = $('.header__link');
+
+  nav.click(function (event) {
+    let current_scroll = window.pageYOffset,
+      button = $(event.target),
+      target_href = button.attr('href'),
+      target_section = $(target_href),
+      target_scroll = target_section.offset();
+
+    event.preventDefault();
+    scrollto(target_scroll, 350);
+
+
+  });
+
+  function scrollTo(section) {
+
+
+
+  }
 
 }
 
