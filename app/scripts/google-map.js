@@ -4,7 +4,6 @@ import * as marker from '../images/svg/map-marker-gray.svg';
 export class MyMap {
   constructor(){
     this['element'] = document.getElementById('map');
-    console.log(this.element);
     this['styles'] = styles;
     this['place'] = {
       center: {
@@ -49,7 +48,6 @@ export class MyMap {
       }
     });
 
-    console.log(this.marker_instance);
   }
 
 
