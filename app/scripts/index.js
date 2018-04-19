@@ -2,11 +2,12 @@ import './../styles/main.scss'
 import { MyMap } from './google-map';
 import * as $ from 'jquery';
 import * as scrollto from 'jquery.scrollto';
-window['myMap'] = null;
 
 window['initMap'] = function(){
   window['myMap'] = new MyMap();
 };
+
+const initMap = window['initMap'];
 
 document.addEventListener("DOMContentLoaded", onLoad);
 
@@ -18,9 +19,24 @@ function onLoad(){
   let registrationBtnBig2 = document.querySelector('#registrationBtnBig2');
   let closeBtn = document.querySelector('#exitBtn');
   let closeBtn2 = document.querySelector('#exitBtn2');
-
+  let emailError = $('#email_error');
   let popup = document.querySelector('.registration');
   let successPopup = document.querySelector('.registration-success');
+
+  let nameInput = document.querySelector('#name');
+  let telInput = document.querySelector('#tel');
+  let emailInput = document.querySelector('#email');
+
+  emailInput.addEventListener('input', emailInputEvent);
+
+  function emailInputEvent() {
+    if (emailInput.value == ''){
+      displayEnterEmail();
+    } else {
+      hideEnterEmail();
+    }
+
+  }
 
   function openRegistrSuccess () {
     successPopup.style.display = 'flex';
@@ -48,6 +64,14 @@ function onLoad(){
     setTimeout(function () {
       popup.style.display = 'none'
     }, 250)
+  }
+
+  function displayEnterEmail() {
+    emailError.addClass('registration__input-error_show');
+  }
+
+  function hideEnterEmail() {
+    emailError.removeClass('registration__input-error_show');
   }
 
   registrationBtn.onclick = function () {
@@ -78,9 +102,16 @@ function onLoad(){
 
   function submitForm () {
 
-    let name = document.querySelector('#name').value;
-    let tel = document.querySelector('#tel').value;
-    let email = document.querySelector('#email').value;
+    let name = nameInput.value;
+    let tel = telInput.value;
+    let email = emailInput.value;
+
+    if (email == '') {
+      displayEnterEmail();
+      return;
+    } else {
+      hideEnterEmail();
+    }
 
     let url = 'http://tugush.com/landing/sendmail/';
     let type = 'POST';
@@ -89,6 +120,7 @@ function onLoad(){
       tel: tel,
       email: email
     };
+
 
     const request = $.post(url,{
       data: JSON.stringify(data),

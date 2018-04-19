@@ -4,10 +4,14 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    link(rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon")
+    link(rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png")
+    link(rel="manifest" href="./images/favicons/manifest.json")
+    link(rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5")
+    link(rel="shortcut icon" href="./images/favicons/favicon.ico")
     title ADCRYPTO
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous")
-    script(src="/bundle.js")
   body
     include includes/header.pug
     include includes/adcrypto.pug
@@ -23,7 +27,5 @@ html(lang="en")
     include includes/success
 
     script(src="https://use.fontawesome.com/448e6a6850.js")
-
-    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm2yqV04hc0wgj2YbMtJagZemmtEvADzY&callback=window.initMap")
-
-    script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
+    script(src="/bundle.js")
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm2yqV04hc0wgj2YbMtJagZemmtEvADzY&callback=initMap")

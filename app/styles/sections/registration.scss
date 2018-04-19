@@ -112,3 +112,14 @@
   margin: 33px auto;
   font-weight: bold;
 }
+
+.registration__input-error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  font-style: italic;
+  display: none;
+  &_show {
+    display: block;
+  }
+}

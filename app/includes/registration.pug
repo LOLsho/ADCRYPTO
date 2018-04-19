@@ -2,21 +2,23 @@ div(class="registration")
   div(class="registration__container")
     div(class="registration__header")
       p(class="registration__title") Зарегистрироваться
-      img(class="registration__exit-img" id="exitBtn" src="./images/svg/close@3x.png")
+      img(class="registration__exit-img" id="exitBtn" src="./images/svg/close-blue.svg")
     div(class="registration__content")
       form(class="registration__form" id="registration__form")
 
         div(class="registration__input-wrap")
-          label(class="registration__label" for="name") Имя:
-          input(type="text" name="name" id="name" class="registration__input" placeholder="Введите имя")
+          label(class="registration__label" for="tel") Имя:
+          input(type="text" name="name" id="name" class="registration__input" placeholder="...")
 
         div(class="registration__input-wrap")
           label(class="registration__label" for="tel") Телефон:
-          input(type="tel" name="tel" id="tel" class="registration__input" placeholder="Введите номер телефона")
+          input(type="tel" name="tel" id="tel" class="registration__input" placeholder="...")
 
 
         div(class="registration__input-wrap")
-          label(class="registration__label" for="email") Введите E-mail:
-          input(type="email" name="email" id="email" class="registration__input" placeholder="Введите E-mail" required)
+          label(class="registration__label" for="email") E-mail:
+          .input-group
+            input(type="email" name="email" id="email" class="registration__input" placeholder="..." required)
+            div.registration__input-error#email_error Пожалуйста, введите E-mail
         div(class="registration__line")
-        button(type="button" class="btn registration__btn" id="submitBtn") зарегистрироваться
+        button(type="button" class="btn registration__btn" id="submitBtn") Зарегистрироваться
