@@ -113,7 +113,7 @@ function onLoad(){
       hideEnterEmail();
     }
 
-    let url = 'http://tugush.com/landing/sendmail/';
+    let url = 'https://www.tugush.com/landing/sendmail/';
     let type = 'POST';
     let data = {
       name: name,
