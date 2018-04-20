@@ -124,11 +124,11 @@ function onLoad(){
 
     const request = $.post(url,{
       data: JSON.stringify(data),
-    }).done(()=>{
+    }).done((response)=>{
         closeRegistrPopup();
         openRegistrSuccess();
       })
-      .fail(()=>{
+      .fail((error)=>{
         console.error(error)
       })
     ;
@@ -150,6 +150,7 @@ function onLoad(){
       target_scroll = target_section.offset();
 
     event.preventDefault();
+    target_scroll.top = target_scroll.top - 76;
     scrollto(target_scroll, 350);
 
 
