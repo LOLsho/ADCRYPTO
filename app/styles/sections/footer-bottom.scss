@@ -2,6 +2,10 @@
   background: url("../../images/bg/blackest.png");
   background-size: 100px;
   padding: 41px 0 38px;
+
+  @include phones-mid {
+    padding: 41px 8px 41px;
+  }
 }
 
 .footer-bottom__content {

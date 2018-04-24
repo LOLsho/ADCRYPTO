@@ -2,6 +2,16 @@
   background: url("../../images/bg/main-bg@2x.jpg") no-repeat center top;
   background-size: cover;
   padding: 45px 0 120px 0;
+
+  @include phones-mid {
+    height: 100vh;
+    padding: 0;
+  }
+
+  @include phones-min {
+    height: 100vh;
+    padding: 0;
+  }
 }
 
 .adcrypto__container {
@@ -12,6 +22,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include phones-mid {
+    margin-top: 35px;
+  }
+
+  @include phones-min {
+    margin-top: 12px;
+  }
 }
 
 .adcrypto__tugush-img {
@@ -27,8 +45,14 @@
   margin-right: 75px;
   margin-top: -5px;
 
+  @include phones-mid {
+    width: 386px;
+    margin-right: 65px;
+  }
+
   @include phones-min {
-    width: 406px;
+    width: 356px;
+    margin-right: 65px;
   }
 }
 
@@ -52,12 +76,14 @@
 
   @include phones-min {
     font-size: 34px;
+    margin-top: 30px;
   }
 }
 
 .adcrypto__btn {
   margin-top: 62px;
   background: none;
+  border: 1px solid white;
 
   &:hover {
     background: rgba(white, .08);
@@ -71,5 +97,6 @@
   @include phones-min {
     width: 95%;
     font-size: 16px;
+    margin-top: 40px;
   }
 }

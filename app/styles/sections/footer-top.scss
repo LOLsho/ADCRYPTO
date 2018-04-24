@@ -70,6 +70,10 @@
 
 .footer-top__tel span {
   color: white;
+
+  @include phones-min {
+    width: 165px;
+  }
 }
 
 .footer-top__email {

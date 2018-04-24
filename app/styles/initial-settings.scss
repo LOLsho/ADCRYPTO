@@ -44,6 +44,7 @@ h2 {
   width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
 
   @include desctop {
     width: 940px;
@@ -54,11 +55,12 @@ h2 {
   }
 
   @include phones {
+    padding: 0;
     width: 95%;
   }
 
   @include phones-mid {
-    width: 95%;
+    width: 94%;
   }
 
   //@include phones-min {
@@ -75,4 +77,5 @@ h2 {
   padding: 17px 0 15px;
   cursor: pointer;
   transition: background-color 0.4s;
+  border: none;
 }

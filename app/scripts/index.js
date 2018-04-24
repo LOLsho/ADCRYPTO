@@ -40,6 +40,7 @@ function onLoad(){
 
   function openRegistrSuccess () {
     successPopup.style.display = 'flex';
+    body.style.overflow = 'hidden';
     setTimeout(function () {
       successPopup.style.opacity = '1'
     }, 10)
@@ -47,6 +48,7 @@ function onLoad(){
 
   function closeRegistrSuccess () {
     successPopup.style.opacity = '';
+    body.style.overflow = 'auto';
     setTimeout(function () {
       successPopup.style.display = 'none'
     }, 250)
@@ -54,6 +56,7 @@ function onLoad(){
 
   function openRegistrPopup () {
     popup.style.display = 'flex';
+    body.style.overflow = 'hidden';
     setTimeout(function () {
       popup.style.opacity = '1'
     }, 10)
@@ -61,6 +64,7 @@ function onLoad(){
 
   function closeRegistrPopup () {
     popup.style.opacity = '';
+    body.style.overflow = 'auto';
     setTimeout(function () {
       popup.style.display = 'none'
     }, 250)
