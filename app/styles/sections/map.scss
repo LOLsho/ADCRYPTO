@@ -1,5 +1,9 @@
 .google-map {
   height: 350px;
+
+  @include phones {
+    height: 450px;
+  }
 }
 
 .google-map__container {

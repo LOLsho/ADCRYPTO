@@ -2,6 +2,10 @@
   background: url("../../images/bg/grey@2x.png");
   background-size: 100px;
   padding: 75px 0 85px;
+
+  @include phones-mid {
+    padding: 85px 0 95px;
+  }
 }
 
 .unit__content {
@@ -22,6 +26,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include phones-mid {
+    margin-top: 55px;
   }
 }
 

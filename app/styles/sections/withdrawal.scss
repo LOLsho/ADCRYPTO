@@ -1,6 +1,16 @@
 .withdrawal {
   background: #f2f2f2;
   padding: 81px 0 78px;
+
+  @include phones {
+
+    padding: 80px 0 80px;
+  }
+
+  @include phones-mid {
+
+    padding: 90px 0 80px;
+  }
 }
 
 //.withdrawal__title {
@@ -11,11 +21,47 @@
   display: flex;
   justify-content: space-between;
   margin-top: 78px;
+  flex-wrap: wrap;
+
+  @include desctop {
+    justify-content: center;
+  }
+
+  @include phones {
+    margin-top: 40px;
+  }
 }
 
-//.withdrawal__item {
-//
-//}
+.withdrawal__item {
+
+  @include desctop {
+
+
+    &:first-child {
+      margin-bottom: 35px;
+    }
+  }
+
+  @include tablets {
+    margin-right: 15px;
+  }
+
+  @include phones {
+    margin-bottom: 40px;
+    &:first-child {
+      margin-bottom: 18px;
+    }
+  }
+
+  @include phones-min {
+    margin: 0;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+}
 
 .withdrawal__wrap-svg {
   width: 200px;

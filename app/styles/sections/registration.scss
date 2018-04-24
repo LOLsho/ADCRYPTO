@@ -1,20 +1,4 @@
-.registration {
-  height: 100vh;
-  background: rgba(black, .6);
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: none;
-  opacity: 0;
-  transition: 0.25s;
-}
-
-.registration-success {
+.registration, .registration-success {
   height: 100vh;
   background: rgba(black, .6);
   justify-content: center;
@@ -35,6 +19,10 @@
   border-radius: 10px;
   background: white;
   margin-bottom: 300px;
+
+  @include tablets {
+    width: 95%;
+  }
 }
 
 .registration__header {
@@ -64,6 +52,34 @@
 
 .registration__form {
   margin-top: 35px;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.registration__inputs-wrap {
+
+  @include tablets {
+    margin-left: 40px;
+  }
+
+  @include phones {
+    margin-left: 0;
+  }
+
+  @include phones-mid {
+    width: 70%;
+  }
 }
 
 .registration__success {
@@ -82,12 +98,22 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include phones {
+    margin-right: 0;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }
 
 .registration__label {
   color: #575757;
   font-size: 16px;
   margin-right: 25px;
+
+  @include phones {
+    margin-bottom: 10px;
+  }
 }
 
 .registration__input {
@@ -98,6 +124,10 @@
   padding: 0 30px;
   border: 1px solid #dbdbdb;
   font-size: 16px;
+
+  @include phones-mid {
+    width: 100%;
+  }
 }
 
 .registration__line {
@@ -112,6 +142,10 @@
   width: 284px;
   margin: 33px auto;
   font-weight: bold;
+
+  @include phones-min {
+    width: 90%;
+  }
 }
 
 .registration__input-error {
@@ -120,7 +154,23 @@
   position: absolute;
   font-style: italic;
   display: none;
+
   &_show {
     display: block;
+  }
+
+  @include tablets {
+    top: 59px;
+  }
+}
+
+.input-group {
+  position: relative;
+
+  @include phones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

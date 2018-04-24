@@ -6,7 +6,17 @@
 body {
   font-family: 'Helvetica Neue', sans-serif;
   padding-top: 76px; // it's for fixed menu
-  min-width: 1200px;
+  //min-width: 1200px;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  @include desctop {
+    padding-top: 69px;
+  }
+
+  @include tablets {
+    padding-top: 0px;
+  }
 }
 
 html, body {
@@ -27,12 +37,33 @@ h2 {
   font-size: 30px;
   text-align: center;
   color: #4961ae;
+
 }
 
 .container {
-  min-width: 1200px;
-  width: 1200px;
+  width: 1230px;
   margin: 0 auto;
+  padding: 0 15px;
+
+  @include desctop {
+    width: 940px;
+  }
+
+  @include tablets {
+    width: 720px;
+  }
+
+  @include phones {
+    width: 95%;
+  }
+
+  @include phones-mid {
+    width: 95%;
+  }
+
+  //@include phones-min {
+  //  width: 940px;
+  //}
 }
 
 .btn {

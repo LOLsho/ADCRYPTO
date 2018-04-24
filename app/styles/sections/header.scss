@@ -8,6 +8,10 @@
   top: 0;
   left: 0;
   right: 0;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .header__content {
@@ -19,6 +23,10 @@
 .header__logo-link {
   width: 109px;
   height: 24px;
+
+  @include desctop {
+    display: none;
+  }
 }
 
 .header__logo {

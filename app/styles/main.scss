@@ -1,5 +1,8 @@
 @import '../fonts/_fonts';
 
+// media
+@import "./media";
+
 // initial settings
 @import "initial-settings";
 
@@ -16,3 +19,5 @@
 @import "./sections/footer-top";
 @import "./sections/footer-bottom";
 @import "./sections/registration";
+
+

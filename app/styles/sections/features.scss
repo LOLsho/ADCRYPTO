@@ -1,6 +1,6 @@
 .features {
   background: url("../../images/bg/products-bg@2x.jpg") no-repeat center center / cover;
-  padding: 81px 0;
+  padding: 90px 0;
 }
 
 .features__title {
@@ -12,14 +12,32 @@
   margin-top: 51px;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include tablets {
+    margin-top: 0;
+  }
 }
 
 .features__item {
   width: 316px;
-  margin-right: 114px;
+  margin-right: 105px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include desctop {
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+  @include tablets {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+
+  @include phones {
+    margin-top: 70px;
   }
 }
 
@@ -32,22 +50,42 @@
 
   &1 {
     width: 100px;
+
+    @include phones-min {
+      width: 90px;
+    }
   }
 
   &2 {
     width: 94px;
+
+    @include phones-min {
+      width: 84px;
+    }
   }
 
   &3 {
     width: 98px;
+
+    @include phones-min {
+      width: 88px;
+    }
   }
 
   &4 {
     width: 112px;
+
+    @include phones-min {
+      width: 102px;
+    }
   }
 
   &5 {
     width: 89px;
+
+    @include phones-min {
+      width: 79px;
+    }
   }
 }
 
@@ -56,4 +94,8 @@
   color: white;
   font-size: 18px;
   font-weight: 300;
+
+  @include phones-min {
+    font-size: 17px;
+  }
 }

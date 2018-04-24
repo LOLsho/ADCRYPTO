@@ -10,6 +10,11 @@
 .referral__title {
   color: white;
   letter-spacing: 0.6px;
+
+  @include phones {
+
+    font-size: 38px;
+  }
 }
 
 .referral__text {
@@ -19,4 +24,18 @@
   margin: 40px auto 0;
   width: 940px;
   letter-spacing: 0.6px;
+
+  @include desctop {
+    width: 100%;
+  }
+
+  @include phones {
+
+    font-size: 35px;
+  }
+
+  @include phones {
+    font-size: 32px;
+    margin-top: 60px;
+  }
 }

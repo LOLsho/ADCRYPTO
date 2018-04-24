@@ -2,6 +2,10 @@
   padding: 81px 0 105px;
   background: url("../../images/logos/shield-big-grey.svg") no-repeat center -910px;
   background-size: 1040px;
+
+  @include phones-min {
+    padding: 61px 0 55px;
+  }
 }
 
 .rare__content {
@@ -16,6 +20,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 85px;
+  flex-wrap: wrap;
+
+  @include desctop {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include tablets {
+    margin: 20px 19px;
+  }
+
+
 }
 
 .rare__item {
@@ -40,6 +56,14 @@
       width: 215px;
     }
   }
+
+  @include desctop {
+    margin: 0 9px;
+  }
+
+  @include tablets {
+    margin: 20px 19px;
+  }
 }
 
 .rare__svg-wrap {
@@ -55,18 +79,34 @@
 
 .rare__pic1 {
   width: 118px;
+
+  @include phones-min {
+    width: 98px;
+  }
 }
 
 .rare__pic2 {
   width: 93px;
+
+  @include phones-min {
+    width: 73px;
+  }
 }
 
 .rare__pic3 {
   width: 107px;
+
+  @include phones-min {
+    width: 87px;
+  }
 }
 
 .rare__pic4 {
   width: 103px;
+
+  @include phones-min {
+    width: 83px;
+  }
 }
 
 .rare__desc {
@@ -75,4 +115,8 @@
   font-size: 22px;
   font-weight: bold;
   width: 240px;
+
+  @include phones-min {
+    font-size: 19px;
+  }
 }

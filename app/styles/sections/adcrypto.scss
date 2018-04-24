@@ -16,18 +16,43 @@
 
 .adcrypto__tugush-img {
   width: 102px;
+
+  @include phones-min {
+    width: 82px;
+  }
 }
 
 .adcrypto__logo-img {
   width: 506px;
   margin-right: 75px;
   margin-top: -5px;
+
+  @include phones-min {
+    width: 406px;
+  }
 }
 
 .adcrypto__title {
   color: white;
   width: 894px;
   margin-top: 60px;
+
+  @include tablets {
+    width: 100%;
+  }
+
+  @include phones {
+
+    font-size: 38px;
+  }
+
+  @include phones-mid {
+    font-size: 36px;
+  }
+
+  @include phones-min {
+    font-size: 34px;
+  }
 }
 
 .adcrypto__btn {
@@ -36,5 +61,15 @@
 
   &:hover {
     background: rgba(white, .08);
+  }
+
+  @include phones-mid {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  @include phones-min {
+    width: 95%;
+    font-size: 16px;
   }
 }

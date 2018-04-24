@@ -20,11 +20,19 @@
   margin-top: 34px;
   text-align: center;
   font-weight: 300;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .about__more {
   text-align: center;
   margin-top: 12px;
+
+  @include phones {
+    margin-top: 22px;
+  }
 }
 
 .about__more-text {
@@ -46,11 +54,12 @@
   background: #4961ae;
   margin-top: 60px;
 
-  //&:hover {
-  //  background: red;
-  //}
-
   &:hover {
     background: #405599;
+  }
+
+  @include phones {
+    width: 100%;
+    font-size: 17px;
   }
 }

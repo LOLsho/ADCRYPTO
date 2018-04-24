@@ -75,5 +75,9 @@
   ],
   "engines": {
     "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery.scrollto": "^2.1.2"
   }
 }

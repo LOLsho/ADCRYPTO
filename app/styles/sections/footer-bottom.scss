@@ -6,6 +6,14 @@
 
 .footer-bottom__content {
   display: flex;
+
+  @include phones-min {
+    flex-direction: column;
+  }
+
+  @include phones-mid {
+    flex-direction: column;
+  }
 }
 
 .footer-bottom__rights {
@@ -32,4 +40,18 @@
   color: #807f7f;
   font-size: 14px;
   margin-left: 105px;
+
+  @include phones {
+    margin-left: 0px;
+  }
+
+  @include phones-mid {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  @include phones-min {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
